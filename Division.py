@@ -1,3 +1,4 @@
+# This is a comment line
 import os
 
 input_file = '/home/student/Documents/QM7/structures.txt'
