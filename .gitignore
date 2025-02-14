@@ -1,0 +1,6 @@
+slurm-*.out
+Gau-*
+opt/*
+opt_failed_converg/*
+opt_failed_log_intramole/*
+opt_failed_Nsteps/*
