@@ -1,0 +1,10 @@
+mol_0120.log	weird rizing of the energy 	--> try pre-opt with GAFF !WORKED!
+mol_0131.log    ????? (linear carbon chain)
+mol_0927.log    proton abstraction (final point H-suspended)
+mol_1063.log    ????? (ketone + -NH2 terminal)
+mol_0326.log    ?????? (branched hydro-carbon)
+mol_0369.log    ???? (hydrocarbon + -N terminal)
+mol_1132.log    proton abstraction (termninal alcool + -N terminal + bending)
+mol_1174.log    ???? (hydrocarbon + -N terminal)
+mol_1191.log    forces rising  linear carbon chain + -N terminal (rigid/ non-bending)
+mol_1211.log    ???? (branched hydrocarbon + -NH terminal + -NH2 terminal)
