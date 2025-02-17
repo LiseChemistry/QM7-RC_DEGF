@@ -1,86 +1,86 @@
-logs/mol_0120.log
-logs/mol_0131.log
-logs/mol_0927.log
-logs/mol_1063.log
-logs/mol_0326.log
-logs/mol_0369.log
-logs/mol_1174.log
-logs/mol_1191.log
-logs/mol_1211.log
-logs/mol_0790.log
-logs/mol_1505.log
-logs/mol_0836.log
-logs/mol_0847.log
-logs/mol_2038.log
-logs/mol_2039.log
-logs/mol_2134.log
-logs/mol_2193.log
-logs/mol_2783.log
-logs/mol_2789.log
-logs/mol_1747.log
-logs/mol_2822.log
-logs/mol_2347.log
-logs/mol_2351.log
-logs/mol_2433.log
-logs/mol_3016.log
-logs/mol_3057.log
-logs/mol_3058.log
-logs/mol_3094.log
-logs/mol_3601.log
-logs/mol_3634.log
-logs/mol_3636.log
-logs/mol_3669.log
-logs/mol_3676.log
-logs/mol_3691.log
-logs/mol_3133.log
-logs/mol_3702.log
-logs/mol_3726.log
-logs/mol_3758.log
-logs/mol_3174.log
-logs/mol_3177.log
-logs/mol_3230.log
-logs/mol_3236.log
-logs/mol_3875.log
-logs/mol_3299.log
-logs/mol_3918.log
-logs/mol_4005.log
-logs/mol_4542.log
-logs/mol_4156.log
-logs/mol_4157.log
-logs/mol_4653.log
-logs/mol_3511.log
-logs/mol_3570.log
-logs/mol_4759.log
-logs/mol_4413.log
-logs/mol_4844.log
-logs/mol_5471.log
-logs/mol_5499.log
-logs/mol_5521.log
-logs/mol_5556.log
-logs/mol_5565.log
-logs/mol_5674.log
-logs/mol_5676.log
-logs/mol_5730.log
-logs/mol_5116.log
-logs/mol_5759.log
-logs/mol_5770.log
-logs/mol_5784.log
-logs/mol_5821.log
-logs/mol_5194.log
-logs/mol_5853.log
-logs/mol_5211.log
-logs/mol_5865.log
-logs/mol_5872.log
-logs/mol_6391.log
-logs/mol_5356.log
-logs/mol_6049.log
-logs/mol_6527.log
-logs/mol_6650.log
-logs/mol_6652.log
-logs/mol_6676.log
-logs/mol_6159.log
-logs/mol_6174.log
-logs/mol_6724.log
-logs/mol_6728.log
-logs/mol_6224.log
-logs/mol_7150.log
+logs/mol_0120.log Normal termination
+logs/mol_0131.log Normal termination
+logs/mol_0927.log Normal termination
+logs/mol_1063.log Normal termination
+logs/mol_0326.log Normal termination
+logs/mol_0369.log Normal termination
+logs/mol_1174.log Normal termination
+logs/mol_1191.log Normal termination
+logs/mol_1211.log Normal termination
+logs/mol_0790.log Normal termination
+logs/mol_1505.log Normal termination
+logs/mol_0836.log Normal termination
+logs/mol_0847.log Normal termination
+logs/mol_2038.log Normal termination
+logs/mol_2039.log Normal termination
+logs/mol_2134.log Normal termination
+logs/mol_2193.log Normal termination
+logs/mol_2783.log Normal termination
+logs/mol_2789.log Normal termination
+logs/mol_1747.log Normal termination
+logs/mol_2822.log Normal termination
+logs/mol_2347.log Normal termination
+logs/mol_2351.log Normal termination
+logs/mol_2433.log Normal termination
+logs/mol_3016.log Normal termination
+logs/mol_3057.log Normal termination
+logs/mol_3058.log Normal termination
+logs/mol_3094.log Normal termination
+logs/mol_3601.log Normal termination
+logs/mol_3634.log Normal termination
+logs/mol_3636.log Normal termination
+logs/mol_3669.log Normal termination
+logs/mol_3676.log Normal termination
+logs/mol_3691.log Normal termination
+logs/mol_3133.log Normal termination
+logs/mol_3702.log Normal termination
+logs/mol_3726.log Normal termination
+logs/mol_3758.log Normal termination
+logs/mol_3174.log Normal termination
+logs/mol_3177.log Normal termination
+logs/mol_3230.log Normal termination
+logs/mol_3236.log Normal termination
+logs/mol_3875.log Normal termination
+logs/mol_3299.log Normal termination
+logs/mol_3918.log Normal termination
+logs/mol_4005.log Normal termination
+logs/mol_4542.log Normal termination
+logs/mol_4156.log Normal termination
+logs/mol_4157.log Normal termination
+logs/mol_4653.log Normal termination
+logs/mol_3511.log Normal termination
+logs/mol_3570.log Normal termination
+logs/mol_4759.log Normal termination
+logs/mol_4413.log Normal termination
+logs/mol_4844.log Normal termination
+logs/mol_5471.log Normal termination
+logs/mol_5499.log Normal termination
+logs/mol_5521.log Normal termination
+logs/mol_5556.log Normal termination
+logs/mol_5565.log Normal termination
+logs/mol_5674.log Normal termination
+logs/mol_5676.log Normal termination
+logs/mol_5730.log Normal termination
+logs/mol_5116.log Normal termination
+logs/mol_5759.log Normal termination
+logs/mol_5770.log Normal termination
+logs/mol_5784.log Normal termination
+logs/mol_5821.log Normal termination
+logs/mol_5194.log Normal termination
+logs/mol_5853.log Normal termination
+logs/mol_5211.log Normal termination
+logs/mol_5865.log Normal termination
+logs/mol_5872.log Normal termination
+logs/mol_6391.log Normal termination
+logs/mol_5356.log Normal termination
+logs/mol_6049.log Normal termination
+logs/mol_6527.log Normal termination
+logs/mol_6650.log Normal termination
+logs/mol_6652.log Normal termination
+logs/mol_6676.log Normal termination
+logs/mol_6159.log Normal termination
+logs/mol_6174.log Normal termination
+logs/mol_6724.log Normal termination
+logs/mol_6728.log Normal termination
+logs/mol_6224.log Normal termination
+logs/mol_7150.log Normal termination
