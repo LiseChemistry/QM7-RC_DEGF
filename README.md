@@ -5,8 +5,8 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] read SPAHM articles
 - [X] extract xyz files for QM7 database (.inp)
 - [X] search for the best geometry optimization procedure (wB97X-D/def2-SVP)
-- [ ] extract relaxed geometries (redefine database, excluding non-converged structures)
-- [ ] compute atomization energy for the new database
+- [X] extract relaxed geometries (redefine database, excluding non-converged structures)
+- [X] compute atomization energy for the new database
 - [X] install `Q-stack` package
 - [ ] generate `spahm-a` and `spahm-b` representations for the new database
 - [ ] generate `slatm` representation for the new database
