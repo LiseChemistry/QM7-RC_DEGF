@@ -7,7 +7,7 @@ import qstack as qs
 outputfile = "/home/student5/lise/MasterProject_SPAHM-ENN/Atomization_energy/Atomization_energies.txt"
 ZPEfile = "ZPE.txt"
 E0_file = "E_0.txt"
-mol_list = "mol_list.txt"
+mol_list = "/home/student5/lise/MasterProject_SPAHM-ENN/Atomization_energy/good_logs_list.txt"
 E_CNOSH_file = "E_CNOSH.txt"
 
 E0_elements = {}
@@ -34,7 +34,7 @@ def get_e0(index):
     return float(e0_lines[index].strip())
 
 def calculate_x_energies(molname):
-    mol_path = f"/home/student5/lise/MasterProject_SPAHM-ENN/geom_optimized_xyz/{molname}.xyz"
+    mol_path = f"/home/student5/lise/MasterProject_SPAHM-ENN/QM7_RC_optimized_xyz/{molname}.xyz"
 
     if not os.path.exists(mol_path):
         print(f"Fichier {mol_path} introuvable. Ignoré.")

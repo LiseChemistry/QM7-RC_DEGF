@@ -1,6 +1,7 @@
+logs/mol_3299.log Normal termination
 logs/mol_0071.log Error termination
-logs/mol_0980.log EN COURS
-logs/mol_1024.log Error termination
+logs/mol_0980.log Normal termination
+logs/mol_1024.log Normal termination
 logs/mol_1049.log Error termination
 logs/mol_0400.log Error termination
 logs/mol_1179.log Error termination
@@ -25,7 +26,7 @@ logs/mol_2865.log Error termination
 logs/mol_2906.log Error termination
 logs/mol_3036.log Error termination
 logs/mol_3633.log Error termination
-logs/mol_3105.log Error termination
+logs/mol_3105.log Normal termination
 logs/mol_3788.log Error termination
 logs/mol_3209.log Error termination
 logs/mol_3360.log Error termination
@@ -46,7 +47,7 @@ logs/mol_5937.log Error termination
 logs/mol_6485.log Error termination
 logs/mol_5352.log Error termination
 logs/mol_5986.log Normal termination
-logs/mol_6013.log ormal termination
+logs/mol_6013.log Normal termination
 logs/mol_6072.log Error termination
 logs/mol_6104.log Error termination
 logs/mol_6157.log Normal termination
@@ -56,4 +57,4 @@ logs/mol_6252.log Error termination
 logs/mol_6265.log Normal termination
 logs/mol_6917.log Normal termination
 logs/mol_6939.log Normal termination
-logs/mol_7056.log EN COURS
+logs/mol_7056.log Error termination

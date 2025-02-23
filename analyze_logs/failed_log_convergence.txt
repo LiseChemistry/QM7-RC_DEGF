@@ -41,7 +41,6 @@ logs/mol_3177.log Normal termination
 logs/mol_3230.log Normal termination
 logs/mol_3236.log Normal termination
 logs/mol_3875.log Normal termination
-logs/mol_3299.log Normal termination
 logs/mol_3918.log Normal termination
 logs/mol_4005.log Normal termination
 logs/mol_4542.log Normal termination
