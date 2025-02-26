@@ -9,4 +9,4 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] compute atomization energy for the new database
 - [X] install `Q-stack` package
 - [ ] generate `spahm-a` and `spahm-b` representations for the new database
-- [ ] generate `slatm` representation for the new database
+- [X] generate `slatm` representation for the new database 
