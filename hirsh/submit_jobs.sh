@@ -3,7 +3,7 @@
 JOBNAME="python_parallel_job"
 SCRIPT_PATH="/home/student/MasterProject_SPAHM-ENN/hirsh/code.py"  
 LOGS_LIST="/home/student/MasterProject_SPAHM-ENN/logs_list.txt"    
-MULTI=10 
+MULTI=20 
 
 if [[ ! -f "$LOGS_LIST" ]]; then
     echo "Erreur : le fichier $LOGS_LIST n'existe pas."
