@@ -13,3 +13,6 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [ ] compute Hirschfeld charges (Q-stack)
 - [ ] compute NMR-shielding const
 - [ ] read articles KRR
+- [ ] change programs' names
+- [ ] test of H2O (`spahm-a`, `spahm-b` and `spahm-e`, `slatm`, `hirsh`)
+- [ ] add docs in codes
