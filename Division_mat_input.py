@@ -1,11 +1,12 @@
+#!/usr/bin/env python3
+
 import os
 import numpy as np
 from collections import Counter
 from scipy.io import loadmat
 
-input_file = '/home/student/Documents/QM7/qm7.mat'
-output_dir = '/home/student/Documents/QM7/data_molecules'
-os.makedirs(output_dir, exist_ok=True)
+input_file = './qm7.mat'
+output_dir = './data_molecules'
 
 data = loadmat(input_file)
 
@@ -30,7 +31,7 @@ for i in range(n_molecules):
     if R.ndim == 3:
         positions = R[i][mask]  
     else:
-        raise ValueError("Format inattendu pour la variable R dans le fichier MAT.")
+        raise ValueError("Does not fit the format for variable R in file MAT.")
 
     positions *= bohr_to_angstrom  
 
@@ -65,4 +66,4 @@ for i in range(n_molecules):
 
     molecule_count += 1
 
-print(f"{molecule_count} molécules extraites et enregistrées dans {output_dir}/")
+print(f"{molecule_count} molecules saved in {output_dir}/")
