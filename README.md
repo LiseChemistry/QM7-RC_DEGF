@@ -14,5 +14,6 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [ ] compute NMR-shielding const
 - [ ] read articles KRR
 - [ ] change programs' names
-- [ ] test of H2O (`spahm-a`, `spahm-b` and `spahm-e`, `slatm`, `hirsh`)
+- [ ] test of CH4 with original geometry (`spahm-a`, `spahm-b` and `spahm-e`, `slatm`, `hirsh`)
 - [ ] add docs in codes
+- [ ] `SOAP`
