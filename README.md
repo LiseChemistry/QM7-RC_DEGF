@@ -11,7 +11,6 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] generate `spahm-a`, `spahm-b` and `spahm-e` representations for the new database
 - [X] generate `slatm` representation for the new database 
 - [ ] compute Hirschfeld charges (Q-stack)
-- [ ] compute NMR-shielding const
 - [ ] read articles KRR
 - [ ] change programs' names
 - [ ] test of CH4 with original geometry (`spahm-a`, `spahm-b` and `spahm-e`, `slatm`, `hirsh`)
