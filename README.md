@@ -8,5 +8,11 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] extract relaxed geometries (redefine database, excluding non-converged structures)
 - [X] compute atomization energy for the new database
 - [X] install `Q-stack` package
-- [ ] generate `spahm-a` and `spahm-b` representations for the new database
-- [ ] generate `slatm` representation for the new database
+- [X] generate `spahm-a`, `spahm-b` and `spahm-e` representations for the new database
+- [X] generate `slatm` representation for the new database 
+- [ ] compute Hirschfeld charges (Q-stack)
+- [ ] read articles KRR
+- [ ] change programs' names
+- [ ] test of CH4 with original geometry (`spahm-a`, `spahm-b` and `spahm-e`, `slatm`, `hirsh`)
+- [ ] add docs in codes
+- [ ] `SOAP`
