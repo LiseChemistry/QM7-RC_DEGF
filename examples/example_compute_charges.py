@@ -34,22 +34,21 @@ def main():
     logs_file = os.path.join(path, 'list_of_molecules.txt')
     results_file = os.path.join(results_dir, 'hirsh_charges.txt')
     atm_bas = 'ccpvqz'
-    
+
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
-    
+
     with open(logs_file, 'r') as f:
         xyz_files = [line.strip() + ".xyz" for line in f.readlines()]
-    
+
     with open(results_file, 'w') as f_out:
         for xyz_filename in xyz_files:
             xyz_path = os.path.join(data_dir, xyz_filename)
             if os.path.exists(xyz_path):
-                ho = process_xyz_file(xyz_path, atm_bas)
+                ho = process_xyz_file(xyz_path, atm_bas, charge=1, spin=1)
                 f_out.write(f'{ho}\n')
             else:
                 print(f"File not found: {xyz_path}")
-                
+
 if __name__ == "__main__":
     main()
-
