@@ -9,9 +9,7 @@ def compute_slatm(xyz_file, qml_compatible=True, stack_all=True, global_repr=Fal
     """Process a XYZ file to compute the (a)SLATM representation.
 
     Args:
-        q (str): .
-        r (list): .
-        mbtypes (int): .
+        xyz_file (str): path to a XYZ file.
         qml_compatible (bool): if False, the local representation (global_repr=False) is condensed.
         stack_all (bool): if stack the representations into one big ndarray.
         global_repr (bool): Return molecular SLATM if True, return atomic SLATM if False. 
@@ -27,13 +25,15 @@ def compute_slatm(xyz_file, qml_compatible=True, stack_all=True, global_repr=Fal
         np.ndarray: The (a)SLATM representation.
     """
     mol = compound.xyz_to_mol(xyz_file, 'ccpvqz', charge=+1, spin=1)
-
-    qs = [mol.numbers for mol in molecules]
+    qs = np.asarray([mol.atom_charge(i) for i in range(mol.natm)])
+    print("Atomic numbers:", qs)
     mbtypes = slatm.get_mbtypes([qs], qml=False)
+    print("mbtypes:", mbtypes)
 
-    q = [mol.symbols for mol in molecules]
-    r = [mol.atom_coords(unit='Bohr') for mol in molecules]
-    X = slatm.get_slatm([q], [r], mbtypes, qml_compatible=True, stack_all=True, global_repr=False, sigma2=0.05, r0=0.1, rcut=4.8, dgrid2=0.03, theta0=20.0*np.pi/180.0, sigma3=0.05, dgrid3=0.03)
+    r = np.asarray([mol.atom_coord(i) for i in range(mol.natm)])
+    print("Coordinates:\n", r)
+
+    X = slatm.get_slatm(qs, r, mbtypes, qml_compatible=True, stack_all=True, global_repr=False, sigma2=0.05, r0=0.1, rcut=4.8, dgrid2=0.03, theta0=20.0*np.pi/180.0, sigma3=0.05, dgrid3=0.03)
     return X
 
 def main():
@@ -54,7 +54,7 @@ def main():
     for xyz_filename in xyz_files:  
         xyz_path = os.path.join(data_dir, xyz_filename)
         if os.path.exists(xyz_path):
-            X = compute_slatm([q], [r], [mbtypes], qml_compatible=True, stack_all=True, global_repr=False, sigma2=0.05, r0=0.1, rcut=4.8, dgrid2=0.03, theta0=20.0*np.pi/180.0, sigma3=0.05, dgrid3=0.03)
+            X = compute_slatm(xyz_path, qml_compatible=True, stack_all=True, global_repr=False, sigma2=0.05, r0=0.1, rcut=4.8, dgrid2=0.03, theta0=20.0*np.pi/180.0, sigma3=0.05, dgrid3=0.03)
             results.append(X)
         else:
             print(f"File not found: {xyz_path}")
