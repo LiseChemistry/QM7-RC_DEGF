@@ -9,13 +9,13 @@ from qstack.spahm.rho import atom
 
 def test_a_spahm():
         xyz_file = "./data/mol_0000.xyz"
-        basis = 'ccpvqz'
+        basis = 'minao'
 
-        a_spahm = compute_a_spahm(xyz_file, basis, charge=+1, spin=1)
+        a_spahm = compute_a_spahm(xyz_file, elements=["H", "C", "N", "O", "S"], charge=+1, spin=1, dm=None, guess="LB", model="lowdin-long-x", only_z=None, open_mod=["alpha", "beta"])
 
         print(f"(a)SPAHM for {xyz_file}: {a_spahm}")
 
-        target_values = np.array([])
+        target_values = np.array(np.load('X_mol-0000_atom.npy'))
 
         assert(np.allclose(a_spahm, target_values, atol=1e-5))
 

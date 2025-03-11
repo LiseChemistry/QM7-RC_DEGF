@@ -5,7 +5,7 @@ import numpy as np
 from qstack import compound, spahm
 from qstack.spahm.rho import bond
 
-def compute_b_spahm(xyz_file, logs_file, guess="LB", spin=1, readdm=None, pairfile=None, dump_and_exit=False, same_basis=True, omods=["alpha", "beta"], elements=["H", "C", "N", "O", "S"], only_m0=False, zeros=False, split=False, printlevel=0, with_symbols=False, only_z=[], merge=True):
+def compute_b_spahm(xyz_file, logs_file, guess="LB", spin=1, readdm=None, pairfile=None, dump_and_exit=False, same_basis=False, omods=["alpha", "beta"], elements=["H", "C", "N", "O", "S"], only_m0=False, zeros=False, split=False, printlevel=0, with_symbols=False, only_z=[], merge=True):
     """Process a XYZ file to compute the (b)SPAHM representation.
 
     Args:
@@ -29,10 +29,10 @@ def compute_b_spahm(xyz_file, logs_file, guess="LB", spin=1, readdm=None, pairfi
     Returns:
         np.ndarray: The (b)SPAHM representation.
     """
-    mol = compound.xyz_to_mol(xyz_file, 'ccpvqz', charge=+1, spin=1)
+    mol = compound.xyz_to_mol(xyz_file, 'minao', charge=+1, spin=1)
     print(mol.charge)
 
-    X = bond.get_repr([mol], logs_file, guess="LB", spin=1, readdm=None, pairfile=None, dump_and_exit=False, same_basis=True, omods=["alpha", "beta"], elements=["H", "C", "N", "O", "S"], only_m0=False, zeros=False, split=False, printlevel=0, with_symbols=False, only_z=[], merge=True)
+    X = bond.get_repr([mol], logs_file, guess="LB", spin=1, readdm=None, pairfile=None, dump_and_exit=False, same_basis=False, omods=["alpha", "beta"], elements=["H", "C", "N", "O", "S"], only_m0=False, zeros=False, split=False, printlevel=0, with_symbols=False, only_z=[], merge=True)
     return X
 
 def main():
@@ -40,7 +40,6 @@ def main():
     data_dir = os.path.join(path, 'data')
     results_dir = os.path.join(path, 'results')
     logs_file = os.path.join(path, 'list_of_molecules.txt')
-    results_file = os.path.join(results_dir, 'b_spahm.npy')
 
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
@@ -53,11 +52,12 @@ def main():
     for xyz_filename in xyz_files:
         xyz_path = os.path.join(data_dir, xyz_filename)
         if os.path.exists(xyz_path):
-            X = compute_b_spahm(xyz_path, logs_file, guess="LB", spin=1, readdm=None, pairfile=None, dump_and_exit=False, same_basis=True, omods=["alpha", "beta"], elements=["H", "C", "N", "O", "S"], only_m0=False, zeros=False, split=False, printlevel=0, with_symbols=False, only_z=[], merge=True)
+            X = compute_b_spahm(xyz_path, logs_file, guess="LB", spin=1, readdm=None, pairfile=None, dump_and_exit=False, same_basis=False, omods=["alpha", "beta"], elements=["H", "C", "N", "O", "S"], only_m0=False, zeros=False, split=False, printlevel=0, with_symbols=False, only_z=[], merge=True)
             results.append(X)
         else:
             print(f"File not found: {xyz_path}")
 
+    results_file = os.path.join(results_dir, f"{xyz_filename}.npy")
     np.save(results_file, np.array(results))
     print(f"Results saved to {results_file}")
 

@@ -49,6 +49,7 @@ def main():
                 f_out.write(f'{ho}\n')
             else:
                 print(f"File not found: {xyz_path}")
-
+    
+    results_file = os.path.join(results_dir, f"{xyz_filename}.npy")
 if __name__ == "__main__":
     main()

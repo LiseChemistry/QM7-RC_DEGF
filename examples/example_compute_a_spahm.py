@@ -22,17 +22,18 @@ def compute_a_spahm(xyz_file, elements=["H", "C", "N", "O", "S"], charge=+1, spi
     Returns:
         np.ndarray: The (a)SPAHM representation.
     """
-    mol = compound.xyz_to_mol(xyz_file, 'ccpvqz', charge=charge, spin=spin)
+    mol = compound.xyz_to_mol(xyz_file, 'minao', charge=charge, spin=spin)
 
     X = atom.get_repr(mol, elements=["H", "C", "N", "O", "S"], charge=+1, spin=1, dm=None, guess="LB", model="lowdin-long-x", only_z=None, open_mod=["alpha", "beta"])
+    X = np.array([x for x in X[:,1]])
     return X
+
 
 def main():
     path = os.path.dirname(os.path.realpath(__file__))
     data_dir = os.path.join(path, 'data')
     results_dir = os.path.join(path, 'results')
     logs_file = os.path.join(path, 'list_of_molecules.txt')
-    results_file = os.path.join(results_dir, 'a_spahm.npy')
 
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
@@ -50,6 +51,7 @@ def main():
         else:
             print(f"File not found: {xyz_path}")
 
+    results_file = os.path.join(results_dir, f"{xyz_filename}.npy")
     np.save(results_file, np.array(results))  
     print(f"Results saved to {results_file}")
 
