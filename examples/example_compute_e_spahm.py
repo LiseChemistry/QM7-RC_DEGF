@@ -17,7 +17,7 @@ def compute_e_spahm(xyz_file, basis, charge=1, spin=1):
     Returns:
         np.ndarray: The SPAHM representation.
     """
-    mol = compound.xyz_to_mol(xyz_file, basis, charge=charge, spin=spin)
+    mol = compound.xyz_to_mol(xyz_file, basis, charge=+1, spin=1)
     X = compute_spahm.get_spahm_representation(mol, "lb")
     return X
 
@@ -26,7 +26,6 @@ def main():
     data_dir = os.path.join(path, 'data')
     results_dir = os.path.join(path, 'results')
     logs_file = os.path.join(path, 'list_of_molecules.txt')
-    results_file = os.path.join(results_dir, 'e_spahm.npy')
     basis = 'minao'
 
     if not os.path.exists(results_dir):
@@ -43,7 +42,8 @@ def main():
             results.append(X)
         else:
             print(f"File not found: {xyz_path}")
-
+     
+    results_file = os.path.join(results_dir, f"{xyz_filename}.npy")
     np.save(results_file, np.array(results))
     print(f"Results saved to {results_file}")
 
