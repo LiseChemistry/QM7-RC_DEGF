@@ -2,6 +2,7 @@
 
 import os
 import numpy as np
+import pyscf
 from qstack import compound
 from qstack.qml import slatm
 
@@ -24,16 +25,18 @@ def compute_slatm(xyz_file, qml_compatible=True, stack_all=True, global_repr=Fal
     Returns:
         np.ndarray: The (a)SLATM representation.
     """
-    mol = compound.xyz_to_mol(xyz_file, 'ccpvqz', charge=+1, spin=1)
+    mol = compound.xyz_to_mol(xyz_file, 'minao', charge=+1, spin=1)
     qs = np.asarray([mol.atom_charge(i) for i in range(mol.natm)])
     print("Atomic numbers:", qs)
-    mbtypes = slatm.get_mbtypes([qs], qml=False)
+    qs_elements = [pyscf.gto.charge(z) for z in ["H", "C", "N", "O", "S"]]
+    print(qs_elements)
+    mbtypes = slatm.get_mbtypes([qs_elements], qml=False)
     print("mbtypes:", mbtypes)
 
     r = np.asarray([mol.atom_coord(i) for i in range(mol.natm)])
     print("Coordinates:\n", r)
 
-    X = slatm.get_slatm(qs, r, mbtypes, qml_compatible=True, stack_all=True, global_repr=False, sigma2=0.05, r0=0.1, rcut=4.8, dgrid2=0.03, theta0=20.0*np.pi/180.0, sigma3=0.05, dgrid3=0.03)
+    X = slatm.get_slatm(qs, r, mbtypes, qml_compatible=False, stack_all=True)
     return X
 
 def main():
@@ -41,7 +44,6 @@ def main():
     data_dir = os.path.join(path, 'data')
     results_dir = os.path.join(path, 'results')
     logs_file = os.path.join(path, 'list_of_molecules.txt')
-    results_file = os.path.join(results_dir, 'slatm.npy')
 
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
@@ -58,7 +60,8 @@ def main():
             results.append(X)
         else:
             print(f"File not found: {xyz_path}")
-
+    
+    results_file = os.path.join(results_dir, f"{xyz_filename}.npy")
     np.save(results_file, np.array(results))  
     print(f"Results saved to {results_file}")
 
