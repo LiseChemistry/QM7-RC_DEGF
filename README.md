@@ -15,7 +15,6 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] change programs' names
 - [X] test of `mol_0000` with original geometry (`spahm-a`, `spahm-b` and `slatm`, `hirsh`)
 - [X] add `docs` in code
-- [ ] `soap`
-- [ ] extract charges to the tagret files
-- [ ] prepare files for `spahm-a` and `spahm-b` (atomic representations for each molecule)
-- [ ] compute `slatm`
+- [X] extract charges to the tagret files
+- [X] prepare files for `spahm-a` and `spahm-b` (atomic representations for each molecule)
+- [X] compute `slatm`
