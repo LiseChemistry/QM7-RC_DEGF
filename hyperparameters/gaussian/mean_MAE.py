@@ -1,38 +1,35 @@
 #!/usr/bin/env python3
 
 import numpy as np
+import sys
+import os
 
-atoms = ["C", "H", "N", "S", "O"]
-reps = ["a_slatm", "a_spahm", "b_spahm"]
+atoms = sys.argv[1]
+reps = sys.argv[2]
+results_dir = "results"
+data = {}
 
-for atom in atoms:
-    for rep in reps:
-        fichiers = [f"results/gaussian_regression_{atom}_{rep}_split_{i}.txt" for i in range(1, 6)]
+for i in range(1, 6):
+    file_path = f"{results_dir}/gaussian_regression_{atoms}_{reps}_split_{i}.txt"
 
-        data = {}
+    with open(file_path, "r") as file:
+        for ligne in file:
+            elements = ligne.strip().split()
+            training_size = elements[0]
+            value = float(elements[1])
 
-        for fichier in fichiers:
-            try:
-                with open(fichier, "r") as f:
-                    for ligne in f:
-                        elements = ligne.strip().split()
-                        if len(elements) < 2:
-                            continue
+            if training_size not in data:
+                data[training_size] = []
 
-                        cle = elements[0]
-                        valeur = float(elements[1])
+            data[training_size].append(value)
 
-                        if cle not in data:
-                            data[cle] = []
-                        data[cle].append(valeur)
-            except FileNotFoundError:
-                print(f"File not found : {fichier}")
-                continue
+output_file = f"mean_MAE_{atoms}_{reps}.txt"
+with open(output_file, "w") as sortie:
+    for training_size, values in data.items():
+        mean = np.mean(values)
+        std = np.std(values)
+        sortie.write(f"{training_size} {mean:.18f} {std:.18f}\n")
 
-        output_file = f"mean_MAE_{atom}_{rep}.txt"
-        with open(output_file, "w") as sortie:
-            for cle, valeurs in data.items():
-                moyenne = np.mean(valeurs)
-                sortie.write(f"{cle} {moyenne:.2f}\n")
+print(f"Mean MAE has been written to {output_file}")
 
-        print(f"Mean MAE in {output_file}")
+~                                                                    
