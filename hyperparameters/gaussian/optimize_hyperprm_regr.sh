@@ -1,4 +1,7 @@
 #!/bin/bash
+#SBATCH -n 1 
+#SBATCH -c 2 
+#SBATCH --mem 14GB
 
 JOBNAME="QM7_hyperprm_regression"
 
