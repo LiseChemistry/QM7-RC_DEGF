@@ -1,7 +1,4 @@
 #!/bin/bash
-#SBATCH -n 1 
-#SBATCH -c 2 
-#SBATCH --mem 14GB
 
 JOBNAME="QM7_hyperprm_regression"
 
@@ -12,8 +9,7 @@ seeds=("1" "2" "3" "4" "5")
 for atom in "${atoms[@]}"; do
     for rep in "${reps[@]}"; do
         for seed in "${seeds[@]}"; do
-            sbatch --job-name=$JOBNAME --wrap="python3 hypereparameters_regression.py $atom $rep $seed"
+            sbatch --job-name=$JOBNAME --mem=14GB -n 1 -c 2 --wrap="python3 hypereparameters_regression.py $atom $rep $seed"
         done
     done
 done
-
