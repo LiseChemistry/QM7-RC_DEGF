@@ -1,5 +1,5 @@
 set terminal svg enhanced font "Latin Modern Roman,12" size 1200,900
-set output "learning_curves.svg"
+set output "gaussian_learning_curves.svg"
 
 set multiplot layout 3,2 title "QM7 Radical Cations - Atomic Charges"
 
@@ -20,12 +20,11 @@ do for [i=1:words(atoms)] {
 
     set title sprintf("%s", atom)
 
-    plot sprintf("gaussian_mean_MAE_%s_a_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 1 title "aSPAHM", \
-         sprintf("gaussian_mean_MAE_%s_b_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 2 title "bSPAHM", \
-         sprintf("gaussian_mean_MAE_%s_a_slatm.txt", atom) using 1:($2 * 10**2) with linespoints ls 3 title "aSLATM"
+    plot sprintf("gaussian/mean_MAE_%s_a_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 1 title "aSPAHM", \
+         sprintf("gaussian/mean_MAE_%s_b_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 2 title "bSPAHM", \
+         sprintf("gaussian/mean_MAE_%s_a_slatm.txt", atom) using 1:($2 * 10**2) with linespoints ls 3 title "aSLATM"
 }
 
 unset multiplot
 set output
-set terminal qt
-
+set terminal

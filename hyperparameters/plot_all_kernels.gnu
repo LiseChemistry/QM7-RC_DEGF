@@ -19,10 +19,10 @@ do for [i=1:words(atoms)] {
 
     set title sprintf("%s", atom)
 
-    plot sprintf("gaussian_mean_MAE_%s_a_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 1 title "Laplacian", \
-         sprintf("laplacian_mean_MAE_%s_a_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 2 title "Gaussian"
+    plot sprintf("gaussian/mean_MAE_%s_a_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 1 title "Gaussian", \
+         sprintf("laplacian/mean_MAE_%s_a_spahm.txt", atom) using 1:($2 * 10**2) with linespoints ls 2 title "Laplacian"
 }
 
 unset multiplot
 set output
-set terminal qt
+set terminal 

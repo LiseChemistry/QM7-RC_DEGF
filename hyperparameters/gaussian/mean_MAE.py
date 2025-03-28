@@ -53,7 +53,7 @@ std_value_3 = np.std(list(data_value_3.values()))
 std_value_4 = np.std(list(data_value_4.values()))
 std_value_5 = np.std(list(data_value_5.values()))
 
-output_file = f"results/mean_MAE_{atoms}_{reps}.txt"
+output_file = f"mean_MAE_{atoms}_{reps}.txt"
 with open(output_file, "w") as f:
     f.write(f"{training_size_1} {mean_value_1:.18f} {std_value_1:.18f}\n")
     f.write(f"{training_size_2} {mean_value_2:.18f} {std_value_2:.18f}\n")
@@ -62,4 +62,3 @@ with open(output_file, "w") as f:
     f.write(f"{training_size_5} {mean_value_5:.18f} {std_value_5:.18f}\n")
 
 print(f"Mean MAE and STD have been written to {output_file}")
-~                                                                                                       

@@ -16,7 +16,7 @@ base_path = os.path.dirname(os.path.realpath(__file__))
 results_dir = os.path.join(base_path, "results")
 
 X = np.load(f"{atom}_{rep}.npy")
-y = np.loadtxt(f"/home/student/MasterProject_SPAHM-ENN/charges/{atom}_charges.txt")
+y = np.loadtxt(f"/home/student5/lise/MasterProject_SPAHM-ENN/charges/{atom}_charges.txt")
 
 hyperparams = hyperparameters.hyperparameters(X, y, akernel="G", random_state=seed)
 
@@ -32,7 +32,7 @@ min_sigma = float(hyperparams[min_index, 3])
 
 print(f"min_eta: {min_eta}, min_sigma: {min_sigma}")
 
-regression_results = regression.regression(X, y, read_kernel=False, sigma=min_sigma, eta=min_eta, akernel="G", random_state=seed)
+regression_results = regression.regression(X, y, read_kernel=False, sigma=min_sigma, eta=min_eta, akernel="G", random_state=seed, n_rep=1)
 
 print(f"Regression results for {atom}_{rep}_split_{seed}: {regression_results}")
 
