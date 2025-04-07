@@ -1,7 +1,8 @@
 #!/bin/bash
 
-atoms=("S" "O" "N")
+atoms=("S" "N" "O")
 reps=("a_slatm" "a_spahm" "b_spahm")
+seeds=("1" "2" "3" "4" "5")
 
 for atom in "${atoms[@]}"; do
     for rep in "${reps[@]}"; do
