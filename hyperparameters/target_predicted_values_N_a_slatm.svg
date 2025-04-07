@@ -195,7 +195,7 @@
 		<text><tspan>Target values</tspan></text>
 	</g>
 	<g transform="translate(240.1,31.6)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Target and Predicted Values - SLATM(a) : N</tspan></text>
+		<text><tspan>Target and Predicted Values : N, a</tspan><tspan font-size="9.6pt" dy="3.60pt">s</tspan><tspan font-size="12.0pt" dy="-3.60pt">latm</tspan></text>
 	</g>
 </g>
 	<g id="gnuplot_plot_1a" ><title>gnuplot_plot_1a</title>
@@ -1544,7 +1544,10 @@
 <g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 </g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
-	<path stroke='black'  d='M71.9,54.1 L71.9,342.4 L408.4,342.4 L408.4,54.1 L71.9,54.1 Z  h0.01'/></g>
+	<path stroke='black'  d='M71.9,54.1 L71.9,342.4 L408.4,342.4 L408.4,54.1 L71.9,54.1 Z  h0.01'/>	<g transform="translate(88.7,87.4)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:start">
+		<text><tspan>R² = 0.9799</tspan></text>
+	</g>
+</g>
 <g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M505.2,342.4 L841.7,342.4  h0.01'/></g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
@@ -1705,7 +1708,7 @@
 		<text><tspan>Target values</tspan></text>
 	</g>
 	<g transform="translate(673.4,31.6)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Target and Predicted Values - SLATM(a) : N</tspan></text>
+		<text><tspan>Target and Predicted Values : N, a</tspan><tspan font-size="9.6pt" dy="3.60pt">s</tspan><tspan font-size="12.0pt" dy="-3.60pt">latm</tspan></text>
 	</g>
 </g>
 	<g id="gnuplot_plot_1b" ><title>gnuplot_plot_1b</title>
@@ -3054,7 +3057,10 @@
 <g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 </g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
-	<path stroke='black'  d='M505.2,54.1 L505.2,342.4 L841.7,342.4 L841.7,54.1 L505.2,54.1 Z  h0.01'/></g>
+	<path stroke='black'  d='M505.2,54.1 L505.2,342.4 L841.7,342.4 L841.7,54.1 L505.2,54.1 Z  h0.01'/>	<g transform="translate(522.0,87.4)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:start">
+		<text><tspan>R² = 0.9698</tspan></text>
+	</g>
+</g>
 <g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M938.5,342.4 L1275.0,342.4  h0.01'/></g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
@@ -3215,7 +3221,7 @@
 		<text><tspan>Target values</tspan></text>
 	</g>
 	<g transform="translate(1106.7,31.6)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Target and Predicted Values - SLATM(a) : N</tspan></text>
+		<text><tspan>Target and Predicted Values : N, a</tspan><tspan font-size="9.6pt" dy="3.60pt">s</tspan><tspan font-size="12.0pt" dy="-3.60pt">latm</tspan></text>
 	</g>
 </g>
 	<g id="gnuplot_plot_1c" ><title>gnuplot_plot_1c</title>
@@ -4564,7 +4570,10 @@
 <g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 </g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
-	<path stroke='black'  d='M938.5,54.1 L938.5,342.4 L1275.0,342.4 L1275.0,54.1 L938.5,54.1 Z  h0.01'/></g>
+	<path stroke='black'  d='M938.5,54.1 L938.5,342.4 L1275.0,342.4 L1275.0,54.1 L938.5,54.1 Z  h0.01'/>	<g transform="translate(955.3,87.4)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:start">
+		<text><tspan>R² = 0.9838</tspan></text>
+	</g>
+</g>
 <g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M71.9,742.4 L408.4,742.4  h0.01'/></g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
@@ -4725,7 +4734,7 @@
 		<text><tspan>Target values</tspan></text>
 	</g>
 	<g transform="translate(240.1,431.5)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Target and Predicted Values - SLATM(a) : N</tspan></text>
+		<text><tspan>Target and Predicted Values : N, a</tspan><tspan font-size="9.6pt" dy="3.60pt">s</tspan><tspan font-size="12.0pt" dy="-3.60pt">latm</tspan></text>
 	</g>
 </g>
 	<g id="gnuplot_plot_1d" ><title>gnuplot_plot_1d</title>
@@ -6074,7 +6083,10 @@
 <g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 </g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
-	<path stroke='black'  d='M71.9,454.0 L71.9,742.4 L408.4,742.4 L408.4,454.0 L71.9,454.0 Z  h0.01'/></g>
+	<path stroke='black'  d='M71.9,454.0 L71.9,742.4 L408.4,742.4 L408.4,454.0 L71.9,454.0 Z  h0.01'/>	<g transform="translate(88.7,487.3)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:start">
+		<text><tspan>R² = 0.9807</tspan></text>
+	</g>
+</g>
 <g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M505.2,742.4 L841.7,742.4  h0.01'/></g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
@@ -6235,7 +6247,7 @@
 		<text><tspan>Target values</tspan></text>
 	</g>
 	<g transform="translate(673.4,431.5)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Target and Predicted Values - SLATM(a) : N</tspan></text>
+		<text><tspan>Target and Predicted Values : N, a</tspan><tspan font-size="9.6pt" dy="3.60pt">s</tspan><tspan font-size="12.0pt" dy="-3.60pt">latm</tspan></text>
 	</g>
 </g>
 	<g id="gnuplot_plot_1e" ><title>gnuplot_plot_1e</title>
@@ -7584,7 +7596,10 @@
 <g style="fill:none; color:white; stroke:rgb(  0,   0,   0); stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
 </g>
 <g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
-	<path stroke='black'  d='M505.2,454.0 L505.2,742.4 L841.7,742.4 L841.7,454.0 L505.2,454.0 Z  h0.01'/></g>
+	<path stroke='black'  d='M505.2,454.0 L505.2,742.4 L841.7,742.4 L841.7,454.0 L505.2,454.0 Z  h0.01'/>	<g transform="translate(522.0,487.3)" style="stroke:none; fill:black; font-family:Latin Modern Roman; font-size:12.00pt; text-anchor:start">
+		<text><tspan>R² = 0.9791</tspan></text>
+	</g>
+</g>
 </g>
 </svg>
 
