@@ -8,7 +8,7 @@ set output sprintf("laplacian_target_predicted_values_%s_%s.svg", atom, rep)
 unset key
 set multiplot layout 2,3
 
-set title sprintf("Target and Predicted Values : %s, %s", atom, rep)
+set title sprintf("Target and Predicted Values : %s", atom, rep)
 set xlabel "Target values"
 set ylabel "Predicted values"
 set grid

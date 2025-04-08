@@ -37,20 +37,17 @@ mae_file = os.path.join(results_dir, f'gaussian_MAE_{atom}_{rep}_split_{seed}.tx
 
 regression_results = regression.regression(X, y, read_kernel=False, sigma=min_sigma, eta=min_eta, akernel="G", random_state=seed, n_rep=1, save_pred=True)
 print(f"Regression results for {atom}_{rep}_split_{seed}: {regression_results}")
-np.savetxt(regression_results_file, np.array(regression_results, dtype=object), fmt='%s')
+regression_array = np.array(regression_results, dtype=object)
 
 results, (target_values, predicted_values) = regression_results
 data = np.column_stack((target_values, predicted_values))
 np.savetxt(target_predicted_file, data, fmt='%s', delimiter="\t", comments='')
 
-with open(regression_results_file, 'r') as f:
-    lines = f.readlines()
-first_line = lines[0]
-rest = lines[1:]
-cleaned_line = re.sub(r'[^\d.,-]', '', first_line) 
+first_line = str(regression_array[0])
+cleaned_line = re.sub(r'[^\d.,-]', '', first_line)
 mae_values = cleaned_line.split(',')
 mae_values = [float(value.strip()) for value in mae_values]
-mae_values = np.array(mae_values).reshape(-1, 3) 
+mae_values = np.array(mae_values).reshape(-1, 3)
 np.savetxt(mae_file, mae_values)
 
 print("All calculations are completed.")
