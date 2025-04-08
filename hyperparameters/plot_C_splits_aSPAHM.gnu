@@ -2,14 +2,15 @@
 
 set terminal svg enhanced font "Latin Modern Roman,12" size 1300, 800
 set output "C_SPAHM(a).svg"
+unset key
 
-set multiplot layout 2,3 title "C - SLATM(a) : SPLITS"
+set multiplot layout 2,3 title "C - SPA^HM(a) : SPLITS"
 set style fill transparent solid 0.25
 
 set xlabel "Training set size"
 set ylabel "MAE, 10−2 a.u."
 
-set style line 1 lc rgb "red" lw 2 pt 7 ps 0.5
+set style line 1 lc rgb "red" lw 2 pt 5 ps 0.5
 
 set log y 3
 set log x 1.5
@@ -23,7 +24,7 @@ do for [i=1:words(splits)] {
     set title sprintf("%s", split)
 
     plot sprintf("gaussian/results/gaussian_regression_C_a_spahm_split_%s.txt", split) using 1:($2 * 10**2 - $3 * 10**2):($2 * 10**2 + $3 * 10**2) with filledcurves lc rgb "red" notitle, \
-         sprintf("gaussian/results/gaussian_regression_C_a_spahm_split_%s.txt", split) using 1:($2 * 10**2) with linespoints ls 1 title "SPAHM(a)"
+         sprintf("gaussian/results/gaussian_regression_C_a_spahm_split_%s.txt", split) using 1:($2 * 10**2) with linespoints ls 1 title "SPA^HM(a)"
 }
 
 unset multiplot

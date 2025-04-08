@@ -4,7 +4,7 @@ atom = ARG1
 rep = ARG2
 
 set terminal svg enhanced font "Latin Modern Roman,12" size 1300,800
-set output sprintf("target_predicted_values_%s_%s.svg", atom, rep)
+set output sprintf("laplacian_target_predicted_values_%s_%s.svg", atom, rep)
 unset key
 set multiplot layout 2,3
 
@@ -14,7 +14,7 @@ set ylabel "Predicted values"
 set grid
 
 do for [i=1:5] {
-    filename = sprintf("gaussian/results/gaussian_target_pred_%s_%s_split_%d.txt", atom, rep, i)
+    filename = sprintf("myLfast/results/myLfast_target_pred_%s_%s_split_%d.txt", atom, rep, i)
 
     stats filename using 1:2 name "S" nooutput
 
@@ -26,7 +26,7 @@ do for [i=1:5] {
 
     plot filename using 1:2 with points pt 7 lc rgb "red" title sprintf("Split %d", i), \
          slope * x + intercept with lines lw 2 lc rgb "black" title "Régression"
-
+    #logscale x y 
     unset label 1
 }
 

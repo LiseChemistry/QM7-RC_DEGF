@@ -2,6 +2,7 @@
 
 set terminal svg enhanced font "Latin Modern Roman,12" size 1300,800
 set output "learning_curves.svg"
+unset key
 
 set multiplot layout 2,3 title "QM7 Radical Cations - Atomic Charges"
 set style fill transparent solid 0.25

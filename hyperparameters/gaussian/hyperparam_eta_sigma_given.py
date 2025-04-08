@@ -20,12 +20,11 @@ X = np.load(f"{atom}_{rep}.npy")
 y = np.loadtxt(f"/home/student5/lise/MasterProject_SPAHM-ENN/charges/{atom}_charges.txt")
 hyperparameters_file = os.path.join(results_dir, f'gaussian_hyperparam_{atom}_{rep}_split_{seed}.txt')
 
-with open(hyperparameters_file, 'r') as f:
-    hyperparams = np.loadtxt(f)
-
+hyperparams = np.loadtxt(hyperparameters_file)
 min_index = np.argmin(hyperparams[:, 0])
 min_eta = float(hyperparams[min_index, 2])
 min_sigma = float(hyperparams[min_index, 3])
+print(f"{min_eta}, {min_sigma}")
 
 regression_results_file = os.path.join(results_dir, f'gaussian_regression_{atom}_{rep}_split_{seed}.txt')
 target_predicted_file = os.path.join(results_dir, f'gaussian_target_pred_{atom}_{rep}_split_{seed}.txt')
@@ -38,15 +37,19 @@ np.savetxt(regression_results_file, np.array(regression_results, dtype=object), 
 results, (target_values, predicted_values) = regression_results
 data = np.column_stack((target_values, predicted_values))
 np.savetxt(target_predicted_file, data, fmt='%s', delimiter="\t", comments='')
-    
+
 with open(regression_results_file, 'r') as f:
     lines = f.readlines()
 first_line = lines[0]
 rest = lines[1:]
-cleaned_line = re.sub(r'[^\d.,-]', '', first_line) 
+cleaned_line = re.sub(r'[^\d.,-]', '', first_line)
 mae_values = cleaned_line.split(',')
 mae_values = [float(value.strip()) for value in mae_values]
-mae_values = np.array(mae_values).reshape(-1, 3) 
+mae_values = np.array(mae_values).reshape(-1, 3)
 np.savetxt(mae_file, mae_values)
 
+#mae_line = np.loadtxt(regression_results_file, dtype=str, max_rows=1)
+#mae_values = np.array([float(val) for val in re.findall(r'[-+]?\d*\.\d+|\d+', mae_line)])
+#mae_values = mae_values.reshape(-1, 3)
+#np.savetxt(mae_file, mae_values)
 print("All calculations are completed.")

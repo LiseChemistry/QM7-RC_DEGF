@@ -20,11 +20,13 @@ X = np.load(f"{atom}_{rep}.npy")
 y = np.loadtxt(f"/home/student5/lise/MasterProject_SPAHM-ENN/charges/{atom}_charges.txt")
 
 hyperparams = hyperparameters.hyperparameters(X, y, akernel="G", random_state=seed, adaptive=True)
+
 print(f"Hyperparameters for {atom}_{rep}_split_{seed}: {hyperparams}")
+
 hyperparameters_file = os.path.join(results_dir, f'gaussian_hyperparam_{atom}_{rep}_split_{seed}.txt')
 np.savetxt(hyperparameters_file, np.array(hyperparams))
 
-min_index = np.argmin(hyperparams[:, 0])
+min_index = np.nanargmin(hyperparams[:, 0])
 min_eta = float(hyperparams[min_index, 2])
 min_sigma = float(hyperparams[min_index, 3])
 print(f"min_eta: {min_eta}, min_sigma: {min_sigma}")
