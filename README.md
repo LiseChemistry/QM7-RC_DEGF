@@ -11,10 +11,12 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] generate `spahm-a`, `spahm-b` and `spahm-e` representations for the new database
 - [X] generate `slatm` representation for the new database 
 - [X] compute Hirschfeld charges (`Q-stack`): `wb97xd/def2svp`
-- [ ] read articles KRR
+- [X] read articles KRR
 - [X] change programs' names
-- [X] test of `mol_0000` with original geometry (`spahm-a`, `spahm-b` and `slatm`, `hirsh`)
+- [X] test `mol_0000` with original geometry (`spahm-a`, `spahm-b` and `slatm`, `hirsh`)
 - [X] add `docs` in code
 - [X] extract charges to the tagret files
 - [X] prepare files for `spahm-a` and `spahm-b` (atomic representations for each molecule)
 - [X] compute `slatm`
+- [ ] install the packages
+- [ ] data loader
