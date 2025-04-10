@@ -18,5 +18,5 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] extract charges to the tagret files
 - [X] prepare files for `spahm-a` and `spahm-b` (atomic representations for each molecule)
 - [X] compute `slatm`
-- [ ] install the packages
+- [X] install the packages
 - [ ] data loader
