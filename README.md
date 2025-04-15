@@ -1,5 +1,6 @@
 # MasterProject_SPAHM-ENN
 This is a tentative folder for tracking the master project with Elizavetha
+> wandb : https://wandb.ai/lisechemistry_masterproject/nequimol?nw=nwuserlisechemistry
 
 ## ToDo List
 - [X] read SPAHM articles
@@ -20,3 +21,6 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] compute `slatm`
 - [X] install the packages
 - [ ] data loader
+- [ ] use the data to evaluate performances using `3DMol` model
+- [ ] compare performances of KRR and ENN models with previous results (Atomization energy - targer property)
+- [ ] extract electronic features from spahm-a` and `spahm-b` to use as input for the ENN
