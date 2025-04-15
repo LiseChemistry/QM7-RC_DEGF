@@ -20,7 +20,7 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] prepare files for `spahm-a` and `spahm-b` (atomic representations for each molecule)
 - [X] compute `slatm`
 - [X] install the packages
-- [ ] data loader
+- [X] data loader
 - [ ] use the data to evaluate performances using `3DMol` model
 - [ ] compare performances of KRR and ENN models with previous results (Atomization energy - targer property)
 - [ ] extract electronic features from spahm-a` and `spahm-b` to use as input for the ENN
