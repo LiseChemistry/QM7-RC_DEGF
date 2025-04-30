@@ -16,8 +16,9 @@ data_value_3 = {}
 data_value_4 = {}
 data_value_5 = {}
 
-for i in range(1, 6):
-    file_path = f"results/gaussian_MAE_{atoms}_{reps}_split_{i}.txt"
+#for i in range(1,6):
+for i in [4]:
+    file_path = f"results_C_Yannick/gaussian_regression_{atoms}_{reps}_split_{i}.txt"
     lines = np.loadtxt(file_path)
     results.append(lines)
 
