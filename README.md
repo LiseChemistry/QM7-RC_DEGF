@@ -23,4 +23,11 @@ This is a tentative folder for tracking the master project with Elizavetha
 - [X] data loader
 - [X] use the data to evaluate performances using `3DMol` model
 - [ ] compare performances of KRR and ENN models with previous results
-- [ ] extract electronic features from spahm-a` and `spahm-b` to use as input for the ENN
+- [ ] extract electronic features from `spahm-a` and `spahm-b` (from earliest steps) to use as input for the ENN
+- [X] run `sweep.py` using geometry (non-local property: atomization enenrgy)
+- [ ] run `sweep.py` using geometry and electronic structure `spahm-a`, `spahm-b`
+- [ ] run equivariant NN (`invariant` False) and add `n_v`
+- [ ] run non-local property: atomization energy KRR
+- [ ] change heatmaps
+- [ ] comput. cost (user time, CPU) and accuracy (mae, std) to compare ENN and KRR 
+- [ ] run gaussian for H : `spahm-a` split 2, `spahm-b` splits 1 and 2, `slatm` split 4
