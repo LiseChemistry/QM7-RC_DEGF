@@ -1,15 +1,14 @@
 #!/bin/bash
 
-JOBNAME="QM7_hyperprm_regression"
-
-atoms=("C" "H" "O" "N" "S")
-reps=("a_slatm" "a_spahm" "b_spahm")
+atoms=("C")
+reps=("a_slatm" "b_spahm")
 seeds=("1" "2" "3" "4" "5")
 
 for atom in "${atoms[@]}"; do
     for rep in "${reps[@]}"; do
         for seed in "${seeds[@]}"; do
-            sbatch --job-name=$JOBNAME --mem=14GB -n 1 -c 2 --wrap="python3 hypereparameters_regression.py $atom $rep $seed"
+            JOBNAME="${atom}-${rep}-${seed}_QM7_hyperprm"
+            sbatch --job-name=$JOBNAME --mem=60GB -n 1 -c 2 --wrap="conda run -n new-q-stack --live-stream python hyperparameters_regression.py $atom $rep $seed"
         done
     done
 done
