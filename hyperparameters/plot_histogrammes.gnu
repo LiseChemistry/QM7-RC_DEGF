@@ -1,6 +1,6 @@
 #!/bin/env gnuplot
 
-set terminal svg enhanced font "Latin Modern Roman,12" size 1500, 500
+set terminal svg enhanced font "Latin Modern Roman,12" size 900, 500
 set output "Comparison_Methods.svg"
 set title "QM7 Database: Evaluation of the performance of SPA^HM (a, b) and aSLATM"
 set xlabel "Atoms"
