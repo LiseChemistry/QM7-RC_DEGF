@@ -21,7 +21,7 @@ def complete_vector(vec, target_length=33):
 
 def process_file(file_path):
     """
-    Complete a vector as a string with zeros until it reaches the target length.
+    Process each file while keeping the data in the form of strings.
     """
     with open(file_path, 'r') as file:
         lines = file.read()
