@@ -2,6 +2,7 @@
 
 import os
 import shutil
+import re
 
 source_dir = 'results'
 target_dir = 'representations'
@@ -13,36 +14,44 @@ for filename in os.listdir(source_dir):
 
 def complete_vector(vec, target_length=33):
     """
-    Complete a vector in the form of a string with zeros until it reaches the target length.
+    Completes a vector (list of strings) with '0.0' until it reaches the target_length.
     """
     if len(vec) < target_length:
-        vec += ['0.0'] * (target_length - len(vec))  
+        vec += ['0.0'] * (target_length - len(vec))
     return vec
 
 def process_file(file_path):
     """
-    Process each file while keeping the data in the form of strings.
+    Extracts the vectors between brackets and processes them.
     """
     with open(file_path, 'r') as file:
-        lines = file.read()
+        content = file.read()
 
-        lines = lines.replace('] [', '],[')
+    raw_vectors = re.findall(r'\[([^\]]+)\]', content)
 
-        data = []
-        for line in lines.strip().split("\n"):
-            vec = line.split()
-            data.append(vec)
+    processed_lines = []
+    for raw_vec in raw_vectors:
+        raw_vec = raw_vec.lstrip('[')
+        vec = raw_vec.strip().split()
+        completed_vec = complete_vector(vec)
+        processed_lines.append(" ".join(completed_vec))
 
-    vector1 = complete_vector(data[0])
-    vector2 = complete_vector(data[1])
+    combined_lines = []
+    for i in range(0, len(processed_lines), 2):
+        if i + 1 < len(processed_lines):
+            combined_lines.append([processed_lines[i], processed_lines[i + 1]]) 
+        else:
+            combined_lines.append([processed_lines[i]])
+
+    final_lines = []
+    for pair in combined_lines:
+        final_lines.extend(pair)
 
     with open(file_path, 'w') as f:
-        f.write(" ".join(vector1) + "\n")
-        f.write(" ".join(vector2) + "\n")
+        f.write(" ".join(final_lines) + "\n")
 
 for filename in os.listdir(target_dir):
     file_path = os.path.join(target_dir, filename)
     process_file(file_path)
 
 print("Finished.")
-
