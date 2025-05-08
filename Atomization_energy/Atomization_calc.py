@@ -19,9 +19,9 @@ if os.path.exists(E_CNOSH_file):
                 element, energy = parts
                 E0_elements[element] = float(energy)
 else:
-    print(f"Le fichier {E_CNOSH_file} est introuvable.")
+    print(f"The file {E_CNOSH_file} was not found.")
 
-print("Dictionnaire des énergies des atomes:", E0_elements)
+print("Dictionary of Atomic Energies:", E0_elements)
 
 def get_zpe(index):
     with open(ZPEfile, 'r') as f:
@@ -37,7 +37,7 @@ def calculate_x_energies(molname):
     mol_path = f"/home/student5/lise/MasterProject_SPAHM-ENN/QM7_RC_optimized_xyz/{molname}.xyz"
 
     if not os.path.exists(mol_path):
-        print(f"Fichier {mol_path} introuvable.")
+        print(f"File {mol_path} not found.")
         return 0.0
 
     mol = qs.compound.xyz_to_mol(mol_path, basis='Def2SVP', charge=1, spin=1, ignore=False, unit='ANG', ecp=None)
@@ -58,7 +58,7 @@ with open(mol_list, 'r') as f:
 resultats = []
 for index, molname in enumerate(molnames):
     atomization_energy = calculate_atomization_energy(molname, index)
-    print(f"Calcul de l'énergie d'atomisation pour {molname}: {atomization_energy}")
+    print(f"Atomization energy calculation for {molname}: {atomization_energy}")
     resultats.append([molname, atomization_energy])
 
 np.savetxt(outputfile, resultats, fmt="%s", delimiter="\t", header="Molecule\tAtomization_Energy (kcal/mol)", comments='')
