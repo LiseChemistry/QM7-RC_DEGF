@@ -14,26 +14,24 @@ seed = int(sys.argv[1])
 base_path = os.path.dirname(os.path.realpath(__file__))
 results_dir = os.path.join(base_path, "results")
 
-X = np.load(f"list_glob_representations.npy")
+X = np.load(f"data_a_spahm.npy")
 y = np.loadtxt(f"./Atomization_en.txt")
 
-hyperparams = hyperparameters.hyperparameters(X, y, akernel="G", random_state=seed, adaptive=True)
-
+hyperparams = hyperparameters.hyperparameters(X, y, akernel="myLfast", random_state=seed, adaptive=True)
 print(f"Hyperparameters for split_{seed}: {hyperparams}")
-
-hyperparameters_file = os.path.join(results_dir, f'gaussian_hyperparam_split_{seed}.txt')
+hyperparameters_file = os.path.join(results_dir, f'myLfast_hyperparam_split_{seed}.txt')
 np.savetxt(hyperparameters_file, np.array(hyperparams))
 
-min_index = np.nanargmin(hyperparams[:, 0])
+min_index = np.argmin(hyperparams[:, 0])
 min_eta = float(hyperparams[min_index, 2])
 min_sigma = float(hyperparams[min_index, 3])
 print(f"min_eta: {min_eta}, min_sigma: {min_sigma}")
 
-regression_results_file = os.path.join(results_dir, f'gaussian_regression_split_{seed}.txt')
-target_predicted_file = os.path.join(results_dir, f'gaussian_target_pred_split_{seed}.txt')
-mae_file = os.path.join(results_dir, f'gaussian_MAE_split_{seed}.txt')
+regression_results_file = os.path.join(results_dir, f'myLfast_regression_split_{seed}.txt')
+target_predicted_file = os.path.join(results_dir, f'myLfast_target_pred_split_{seed}.txt')
+mae_file = os.path.join(results_dir, f'myLfast_MAE_split_{seed}.txt')
 
-regression_results = regression.regression(X, y, read_kernel=False, sigma=min_sigma, eta=min_eta, akernel="G", random_state=seed, n_rep=1, save_pred=True)
+regression_results = regression.regression(X, y, read_kernel=False, sigma=min_sigma, eta=min_eta, akernel="myLfast", random_state=seed, n_rep=1, save_pred=True)
 print(f"Regression results for split_{seed}: {regression_results}")
 regression_array = np.array(regression_results, dtype=object)
 

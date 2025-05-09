@@ -14,8 +14,8 @@ seed = int(sys.argv[1])
 base_path = os.path.dirname(os.path.realpath(__file__))
 results_dir = os.path.join(base_path, "results")
 
-X = np.load(f"list_glob_representations.npy")
-y = np.loadtxt(f"./Atomization_en.txt")
+X = np.load(f"data_b_spahm.npy")
+y = np.loadtxt(f"Atomization_en.txt")
 
 hyperparams = hyperparameters.hyperparameters(X, y, akernel="G", random_state=seed, adaptive=True)
 
