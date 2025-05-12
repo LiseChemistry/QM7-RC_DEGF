@@ -12,8 +12,8 @@ set grid ytics
 set key outside right vertical
 
 plot 'min_MAE.dat' using 2:xtic(1) title 'Gaussian aSLATM' linecolor rgb "#FF0000", \
-     '' using 3 title 'Gaussian SPAHM(a)' linecolor rgb "#CAC7C7", \
-     '' using 4 title 'Gaussian SPAHM(b)' linecolor rgb "#00A79F", \
+     '' using 3 title 'Gaussian SPA^HM(a)' linecolor rgb "#CAC7C7", \
+     '' using 4 title 'Gaussian SPA^HM(b)' linecolor rgb "#00A79F", \
      '' using 5 title 'Laplacian aSLATM' linecolor rgb "#EC6608", \
-     '' using 6 title 'Laplacian SPAHM(a)' linecolor rgb "#5C2483", \
-     '' using 7 title 'Laplacian SPAHM(b)' linecolor rgb "#C8D300"
+     '' using 6 title 'Laplacian SPA^HM(a)' linecolor rgb "#5C2483", \
+     '' using 7 title 'Laplacian SPA^HM(b)' linecolor rgb "#C8D300"
