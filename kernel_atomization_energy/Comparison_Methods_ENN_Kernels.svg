@@ -161,10 +161,10 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>SPAHM(a)</title>
+	<g id="gnuplot_plot_1" ><title>aSLATM</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(532.26,66.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Latin Modern Roman" >SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M(a)</tspan></text>
+		<text><tspan font-family="Latin Modern Roman" >aSLATM</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -174,16 +174,16 @@
 	<path stroke='black'  d='M540.65,67.51 L583.21,67.51 L583.21,58.51 L540.65,58.51 L540.65,67.51 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(255,   0,   0)' points = '269.62,469.40 296.36,469.40 296.36,295.47 269.62,295.47 '/>
+		<polygon fill = 'rgb(255,   0,   0)' points = '267.39,469.40 289.68,469.40 289.68,397.73 267.39,397.73 '/>
 	</g>
-	<path stroke='black'  d='M269.62,469.40 L269.62,295.48 L296.35,295.48 L296.35,469.40 L269.62,469.40 Z  '/></g>
+	<path stroke='black'  d='M267.39,469.40 L267.39,397.74 L289.67,397.74 L289.67,469.40 L267.39,469.40 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 	</g>
-	<g id="gnuplot_plot_2" ><title>SPAHM(b)</title>
+	<g id="gnuplot_plot_2" ><title>SPAHM(a)</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(532.26,84.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Latin Modern Roman" >SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M(b)</tspan></text>
+		<text><tspan font-family="Latin Modern Roman" >SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M(a)</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -193,16 +193,16 @@
 	<path stroke='black'  d='M540.65,85.51 L583.21,85.51 L583.21,76.51 L540.65,76.51 L540.65,85.51 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(202, 199, 199)' points = '296.35,469.40 323.09,469.40 323.09,427.23 296.35,427.23 '/>
+		<polygon fill = 'rgb(202, 199, 199)' points = '289.67,469.40 311.95,469.40 311.95,295.47 289.67,295.47 '/>
 	</g>
-	<path stroke='black'  d='M296.35,469.40 L296.35,427.24 L323.08,427.24 L323.08,469.40 L296.35,469.40 Z  '/></g>
+	<path stroke='black'  d='M289.67,469.40 L289.67,295.48 L311.94,295.48 L311.94,469.40 L289.67,469.40 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 	</g>
-	<g id="gnuplot_plot_3" ><title>ε-SPAHM</title>
+	<g id="gnuplot_plot_3" ><title>SPAHM(b)</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(532.26,102.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Latin Modern Roman" >ε-SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M</tspan></text>
+		<text><tspan font-family="Latin Modern Roman" >SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M(b)</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -212,16 +212,16 @@
 	<path stroke='black'  d='M540.65,103.51 L583.21,103.51 L583.21,94.51 L540.65,94.51 L540.65,103.51 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(  0, 167, 159)' points = '323.08,469.40 349.83,469.40 349.83,110.43 323.08,110.43 '/>
+		<polygon fill = 'rgb(  0, 167, 159)' points = '311.94,469.40 334.23,469.40 334.23,427.23 311.94,427.23 '/>
 	</g>
-	<path stroke='black'  d='M323.08,469.40 L323.08,110.44 L349.82,110.44 L349.82,469.40 L323.08,469.40 Z  '/></g>
+	<path stroke='black'  d='M311.94,469.40 L311.94,427.24 L334.22,427.24 L334.22,469.40 L311.94,469.40 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 	</g>
-	<g id="gnuplot_plot_4" ><title>ENN</title>
+	<g id="gnuplot_plot_4" ><title>ε-SPAHM</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(532.26,120.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
-		<text><tspan font-family="Latin Modern Roman" >ENN</tspan></text>
+		<text><tspan font-family="Latin Modern Roman" >ε-SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -231,13 +231,32 @@
 	<path stroke='black'  d='M540.65,121.51 L583.21,121.51 L583.21,112.51 L540.65,112.51 L540.65,121.51 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(236, 102,   8)' points = '349.82,469.40 376.56,469.40 376.56,129.52 349.82,129.52 '/>
+		<polygon fill = 'rgb(236, 102,   8)' points = '334.22,469.40 356.51,469.40 356.51,110.43 334.22,110.43 '/>
 	</g>
-	<path stroke='black'  d='M349.82,469.40 L349.82,129.53 L376.55,129.53 L376.55,469.40 L349.82,469.40 Z  '/></g>
+	<path stroke='black'  d='M334.22,469.40 L334.22,110.44 L356.50,110.44 L356.50,469.40 L334.22,469.40 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 	</g>
-<g fill="none" color="white" stroke="rgb(236, 102,   8)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g id="gnuplot_plot_5" ><title>ENN</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(532.26,138.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Latin Modern Roman" >ENN</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb( 92,  36, 131)' points = '540.65,139.51 583.21,139.51 583.21,130.51 540.65,130.51 '/>
+	</g>
+	<path stroke='black'  d='M540.65,139.51 L583.21,139.51 L583.21,130.51 L540.65,130.51 L540.65,139.51 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb( 92,  36, 131)' points = '356.50,469.40 378.79,469.40 378.79,129.52 356.50,129.52 '/>
+	</g>
+	<path stroke='black'  d='M356.50,469.40 L356.50,129.53 L378.78,129.53 L378.78,469.40 L356.50,469.40 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+	</g>
+<g fill="none" color="white" stroke="rgb( 92,  36, 131)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -247,7 +266,7 @@
 	<path stroke='black'  d='M55.75,54.01 L55.75,469.40 L456.75,469.40 L456.75,54.01 L55.75,54.01 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(256.25,30.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="middle">
-		<text><tspan font-family="Latin Modern Roman" >QM7 Database: Evaluation of the performance of SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M (a, b) and ε-SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M</tspan></text>
+		<text><tspan font-family="Latin Modern Roman" >QM7 Database: Evaluation of the performances of SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M (a, b), ε-SPA</tspan><tspan font-family="Latin Modern Roman"  font-size="9.6" dy="-6.00px">H</tspan><tspan font-family="Latin Modern Roman"  font-size="12.0" dy="6.00px">M and aSLATM</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">

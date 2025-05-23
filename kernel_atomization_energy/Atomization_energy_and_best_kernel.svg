@@ -212,12 +212,12 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
-		<polygon fill = 'rgb(200, 211,   0)' fill-opacity = '0.250000' points = '110.59,178.89 267.31,267.23 580.55,350.37 893.79,381.47 1207.24,408.83 1207.24,382.75 893.79,352.31 580.55,318.80 267.31,231.89 110.59,106.68 '/>
+		<polygon fill = 'rgb(202, 199, 199)' fill-opacity = '0.250000' points = '110.59,178.89 267.31,267.23 580.55,350.37 893.79,381.47 1207.24,408.83 1207.24,382.75 893.79,352.31 580.55,318.80 267.31,231.89 110.59,106.68 '/>
 	</g>
 </g>
 	</g>
 	<g id="gnuplot_plot_6" ><title>Laplacian - ε-SPAHM</title>
-<g fill="none" color="white" stroke="rgb(200, 211,   0)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="white" stroke="rgb(202, 199, 199)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(1207.09,111.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
@@ -225,12 +225,38 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(200, 211,   0)'  d='M1215.48,108.01 L1258.04,108.01 M110.59,142.79 L267.31,249.56 L580.55,334.59 L893.79,366.89 L1207.24,395.79  '/>	<use xlink:href='#gpPt4' transform='translate(110.59,142.79) scale(2.25)' color='rgb(200, 211,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(267.31,249.56) scale(2.25)' color='rgb(200, 211,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(580.55,334.59) scale(2.25)' color='rgb(200, 211,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(893.79,366.89) scale(2.25)' color='rgb(200, 211,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(1207.24,395.79) scale(2.25)' color='rgb(200, 211,   0)'/>
-	<use xlink:href='#gpPt4' transform='translate(1236.76,108.01) scale(2.25)' color='rgb(200, 211,   0)'/>
+	<path stroke='rgb(202, 199, 199)'  d='M1215.48,108.01 L1258.04,108.01 M110.59,142.79 L267.31,249.56 L580.55,334.59 L893.79,366.89 L1207.24,395.79  '/>	<use xlink:href='#gpPt4' transform='translate(110.59,142.79) scale(2.25)' color='rgb(202, 199, 199)'/>
+	<use xlink:href='#gpPt4' transform='translate(267.31,249.56) scale(2.25)' color='rgb(202, 199, 199)'/>
+	<use xlink:href='#gpPt4' transform='translate(580.55,334.59) scale(2.25)' color='rgb(202, 199, 199)'/>
+	<use xlink:href='#gpPt4' transform='translate(893.79,366.89) scale(2.25)' color='rgb(202, 199, 199)'/>
+	<use xlink:href='#gpPt4' transform='translate(1207.24,395.79) scale(2.25)' color='rgb(202, 199, 199)'/>
+	<use xlink:href='#gpPt4' transform='translate(1236.76,108.01) scale(2.25)' color='rgb(202, 199, 199)'/>
+</g>
+	</g>
+	<g id="gnuplot_plot_7" ><title>gnuplot_plot_7</title>
+<g fill="none" color="white" stroke="rgb(202, 199, 199)" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon fill = 'rgb(200, 211,   0)' fill-opacity = '0.250000' points = '110.59,499.01 267.31,567.30 580.55,604.06 893.79,626.09 1207.24,636.10 1207.24,631.61 893.79,623.63 580.55,599.39 267.31,530.12 110.59,468.95 '/>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_8" ><title>Gaussian - aSLATM</title>
+<g fill="none" color="white" stroke="rgb(200, 211,   0)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(1207.09,129.91)" stroke="none" fill="black" font-family="Latin Modern Roman" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Latin Modern Roman" >Gaussian - aSLATM</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(200, 211,   0)'  d='M1215.48,126.01 L1258.04,126.01 M110.59,483.98 L267.31,548.71 L580.55,601.72 L893.79,624.86 L1207.24,633.85  '/>	<use xlink:href='#gpPt4' transform='translate(110.59,483.98) scale(2.25)' color='rgb(200, 211,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(267.31,548.71) scale(2.25)' color='rgb(200, 211,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(580.55,601.72) scale(2.25)' color='rgb(200, 211,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(893.79,624.86) scale(2.25)' color='rgb(200, 211,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(1207.24,633.85) scale(2.25)' color='rgb(200, 211,   0)'/>
+	<use xlink:href='#gpPt4' transform='translate(1236.76,126.01) scale(2.25)' color='rgb(200, 211,   0)'/>
 </g>
 	</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
