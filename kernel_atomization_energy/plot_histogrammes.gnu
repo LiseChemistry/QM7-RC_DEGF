@@ -1,21 +1,23 @@
 #!/bin/env gnuplot
 
-set terminal svg enhanced font "Latin Modern Roman,12" size 600, 500
-set output "Comparison_Methods_ENN_Kernels.svg"
-set title "QM7 Database: Evaluation of the performance of SPA^HM (a, b) and ε-SPA^HM"
-set xlabel "Type of architecture"
+set terminal svg enhanced font "Latin Modern Roman,14" size 700,500
+set output "histogram_repres_atom_en.svg"
+
+set title "QM7^*-RC: Atomization Energy"
+set xlabel "Type of representation"
 set ylabel "MAE, kcal/mol"
+
 set style data histograms
-set style histogram clustered gap 1
-set boxwidth 1.0
+set style histogram rowstacked
+set boxwidth 0.7
 set style fill solid 1.0 border -1
 set grid ytics
-unset xtics
+set rmargin 20
 set key outside right vertical
+unset xtics
+set datafile separator whitespace
 
-plot 'min_MAE.dat' using 2:xtic(2) title 'SPA^HM(a)' linecolor rgb "#FF0000", \
-     '' using 3 title 'SPA^HM(b)' linecolor rgb "#CAC7C7", \
-     '' using 4 title 'ε-SPA^HM' linecolor rgb "#00A79F", \
-     '' using 5 title 'ENN' linecolor rgb "#EC6608", \
-#     '' using 6 title 'Laplacian SPA^HM(a)' linecolor rgb "#5C2483", \
-#     '' using 7 title 'Laplacian SPA^HM(b)' linecolor rgb "#C8D300"
+plot 'min_MAE.dat' using 3:xtic(1) title "SPA^HM(a)" lc rgb "#CAC7C7", \
+     '' using 4 title "SPA^HM(b)" lc rgb "#00A79F", \
+     '' using 5 title "ε-SPA^HM"  lc rgb "#C8D300", \
+     '' using 2 title "aSLATM"    lc rgb "#FF0000"
